@@ -3,7 +3,7 @@ name: Create Release Pull Request
 on:
   push:
     branches:
-      - dev
+      - develop
   workflow_dispatch:
 
 jobs:
@@ -24,4 +24,4 @@ jobs:
         env:
           GIT_PR_RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_PR_RELEASE_BRANCH_PRODUCTION: main
-          GIT_PR_RELEASE_BRANCH_DEV: dev
+          GIT_PR_RELEASE_BRANCH_DEV: develop
